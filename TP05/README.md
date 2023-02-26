@@ -1,6 +1,6 @@
 # !!! Here is the link to test the code
 
-[Exercise 1 - Activity Suggestion](https://codepen.io/Nara6/pen/ZEMpdBW){:target="_blank"}
+[Exercise 1 - Activity Suggestion](codepen.io/Nara6/pen/ZEMpdBW){:target="_blank"}
 <a href="https://codepen.io/Nara6/pen/ZEMpdBW" target="_blank">
   <ul>
     <li>Exercise 1 - Activity Suggestion</li>
