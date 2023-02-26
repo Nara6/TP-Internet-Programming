@@ -1,4 +1,4 @@
-# !!!Here is the link to test the code
+# !!! Here is the link to test the code
 
 <a href="https://codepen.io/Nara6/pen/ZEMpdBW">
   <ul>
@@ -8,5 +8,20 @@
 <a href="https://codepen.io/Nara6/pen/WNgGqRV">
   <ul>
     <li>Exercise 2 - Gender Guessing</li>
+  </ul>
+</a>
+<a href="https://codepen.io/Nara6/pen/rNZMEyW">
+  <ul>
+    <li>Exercise 3 - Nationality Guessing</li>
+  </ul>
+</a>
+<a href="https://codepen.io/Nara6/pen/WNgGqje">
+  <ul>
+    <li>Exercise 4 - University Listing</li>
+  </ul>
+</a>
+<a href="https://codepen.io/Nara6/pen/ZEMpdjL">
+  <ul>
+    <li>Exercise 5 - Book Store</li>
   </ul>
 </a>
