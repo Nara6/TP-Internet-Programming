@@ -1,8 +1,6 @@
 const listBook = document.getElementById("list_book");
-
-    
     function listing(){
-        fetch("http://jsonplaceholder.typicode.com/photos").then(async (res)=>{
+        fetch("https://jsonplaceholder.typicode.com/photos").then(async (res)=>{
             const data = await res.json();
             // console.log(data[1].title);
             
@@ -18,7 +16,6 @@ const listBook = document.getElementById("list_book");
 
         })
     }
-
     function display(){
         id=parseInt(document.URL.split("id=")[1]);
         fetch(`http://jsonplaceholder.typicode.com/photos/${id}`).then(async (response)=>{

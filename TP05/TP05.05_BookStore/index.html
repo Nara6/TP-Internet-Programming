@@ -11,8 +11,6 @@
         body{
         display: flex;
         }
-
-        /* left display */
         .add_book {
             margin: 5px;
             width: 20%;
@@ -32,8 +30,6 @@
             border: 1px solid black;
             cursor: pointer;
         }
-
-        /* right display */
         .list_book{
             display: grid;
             background-color: rgb(204, 212, 218);
@@ -44,12 +40,10 @@
         
         }
         .item{
-            /* display: grid; */
             background: white;
             width: 95%;
             margin: 5px 7px 5px 7px;
             border-radius: 3px;
-            /* padding: 10px */
         }
         .item .button{
             text-align: right;
@@ -83,20 +77,14 @@
     <div class="add_book">
         <p>Name:</p>
         <input type="text" id="name" placeholder="c programming">
-
         <p>Catagory:</p>
-        <input type="text" id="category" placeholder="coding">
-        
+        <input type="text" id="category" placeholder="coding">    
         <p>Price:</p>
         <input type="text" id="price" placeholder="40000 riels"><br>
-
         <button id="add" onclick="addBook();">Add</button>
     </div>
-
     <div class="list_book" id="list_book">
-        
     </div>
-
     <dialog id="updateDialog">
         <div class="dialogHeader">
             Please input the update information 
