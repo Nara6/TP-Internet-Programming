@@ -4,8 +4,8 @@ import Welcome from '@/components/Welcome.vue'
 </script>
 
 <template>
-  <header class="flex items-center justify-around h-screen">
-    <div class="flex">
+  <header class="flex items-center justify-around h-screen ">
+    <div class="flex ">
       <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125"/>
     <div class="flex flex-col">
       <welcome msg="Welcome" />
