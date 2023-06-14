@@ -29,10 +29,10 @@ router.post('/create', auth.ensureSignedIn, async (req, res, next) => {
 })
 
 router.post('/update/:id', auth.ensureSignedIn, async (req, res, next) => {
-  const { name, desc, imageUrl } = req.body
+  const { name, desc, image_url } = req.body
   const { id } = req.params
   console.log(id);
-  const result = await categoryService.update(id, {name, desc, imageUrl})
+  const result = await categoryService.update(id, {name, desc, image_url})
   res.json(result);
 })
 

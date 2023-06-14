@@ -51,7 +51,7 @@ const update = async (item_id, newItem) => {
     const item = await Items.findById(item_id)
     item.name = newItem.name
     item.category = newItem.category
-    item.desc = newItem.desc
+    item.description = newItem.description
     await item.save()
     return {
       success: true,

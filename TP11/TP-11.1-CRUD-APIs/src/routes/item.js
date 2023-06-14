@@ -25,9 +25,9 @@ router.post('/create', auth.ensureSignedIn, async (req, res, next) => {
 
 
 router.post('/update/:id', auth.ensureSignedIn, async (req, res, next) => {
-  const {name, category, desc} = req.body
+  const {name, category, description} = req.body
   const {id} = req.params
-  const result = await itemService.update(id, {name, category, desc})
+  const result = await itemService.update(id, {name, category, description})
   res.json(result);
 })
 

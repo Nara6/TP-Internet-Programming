@@ -76,14 +76,14 @@ const create = async (newCategory) => {
 
 const update = async (cat_id, newCategory) => {
   try{
-    const category = await category.findById(cat_id)
-    category.name = newCategory.name
-    category.desc = newCategory.desc
-    category.imageUrl = newCategory.imageUrl
-    await category.save()
+    const Category = await category.findById(cat_id)
+    Category.name = newCategory.name
+    Category.description = newCategory.description
+    Category.image_url = newCategory.image_url
+    await Category.save()
     return {
       success : true,
-      data : category
+      data : Category
     }
   }catch(err){
     return{
