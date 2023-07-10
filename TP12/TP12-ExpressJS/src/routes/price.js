@@ -17,21 +17,21 @@ router.get('/:id', auth.ensureSignedIn, async function (req, res, next) {
   res.json(result);
 })
 
-router.post('/create', auth.ensureSignedIn, async (req, res, next) => {
+router.post('/create', async (req, res, next) => {
   const {price, product} = req.body
   const result = await priceService.create({price, product})
   res.json(result);
 })
 
 
-router.post('/update/:id', auth.ensureSignedIn, async (req, res, next) => {
-  const {name, category, description} = req.body
+router.post('/update/:id', async (req, res, next) => {
+  const {price} = req.body
   const {id} = req.params
-  const result = await priceService.update(id, {name, category, description})
+  const result = await priceService.update(id, {price})
   res.json(result);
 })
 
-router.post('/delete/:id', auth.ensureSignedIn, async (req, res, next) => {
+router.post('/delete/:id', async (req, res, next) => {
   const {id} = req.params
   const result = await priceService.remove(id);
   res.json(result);

@@ -49,9 +49,7 @@ const create = async (newItem) => {
 const update = async (item_id, newItem) => {
   try{
     const prices = await price.findById(item_id)
-    prices.name = newItem.name
-    prices.category = newItem.category
-    prices.description = newItem.description
+    prices.price = newItem.price
     await prices.save()
     return {
       success: true,
@@ -71,7 +69,7 @@ const remove = async (item_id) => {
     await price.deleteOne({ _id:item_id})
     return {
       success : true,
-      data : "item deleted"
+      data : "price deleted"
     }
   }catch(err){
     return {
